@@ -61,6 +61,8 @@ p.lead {
     font-size: 1.5rem;
     line-height: 3.5rem;
     margin-right: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     &:last-child {
       margin-right: 0;
     }
@@ -76,5 +78,22 @@ p.lead {
     &:hover {
       color: $primary;
     }
+  }
+}
+
+
+@media screen and (prefers-color-scheme: dark) {
+  body {
+    background-color: $gray-900;
+    color: white;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $gray-600;
   }
 }
