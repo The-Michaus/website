@@ -98,6 +98,12 @@ p.lead {
   h6 {
     color: #868e96;
   }
+  .resume-date > .text-primary {
+    color: rgba(202, 174, 255, 0.686275) !important;
+  }
+  .subheading {
+    color: #ced4da;
+  }
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {

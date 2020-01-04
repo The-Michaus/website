@@ -96,4 +96,12 @@ p.lead {
   h6 {
     color: $gray-600;
   }
+
+  .resume-date > .text-primary {
+    color: lighten(saturate($primary, 35%), 15%) !important;
+  }
+
+  .subheading {
+    color: $gray-400; 
+  }
 }
