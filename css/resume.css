@@ -85,6 +85,10 @@ p.lead {
   color: #9e74ecaf;
 }
 
+li > i {
+  color: #9e74ecaf;
+}
+
 @media screen and (prefers-color-scheme: dark) {
   body {
     background-color: #212529;

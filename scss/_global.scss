@@ -81,6 +81,9 @@ p.lead {
   }
 }
 
+li > i {
+  color: $primary;
+}
 
 @media screen and (prefers-color-scheme: dark) {
   body {
