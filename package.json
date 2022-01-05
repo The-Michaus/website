@@ -8,7 +8,9 @@
     },
     "description": "Personal Website for Tracy Michau",
     "homepage": "https://tracymichau.com",
+    "repository": "https://github.com/The-Michaus/website",
     "author": "Tracy Michau",
+    "license": "MIT",
     "dependencies": {
         "@fortawesome/fontawesome-free": "5.15.4",
         "bootstrap": "4.6.0",
