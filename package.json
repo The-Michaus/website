@@ -1,51 +1,25 @@
 {
-    "title": "Resume",
-    "name": "startbootstrap-resume",
-    "version": "5.0.8",
+    "title": "Tracy Michau",
+    "name": "tracymichau",
+    "version": "1.0.0",
+    "source": "index.html",
     "scripts": {
-        "start": "node_modules/.bin/gulp watch",
-        "build": "node_modules/.bin/gulp"
+        "start": "parcel",
+        "build": "parcel build"
     },
-    "description": "Resume is a simple, yet elegant resume and CV theme for Bootstrap 4.",
-    "keywords": [
-        "css",
-        "sass",
-        "html",
-        "responsive",
-        "theme",
-        "template"
-    ],
-    "homepage": "https://startbootstrap.com/template-overviews/resume",
-    "bugs": {
-        "url": "https://github.com/BlackrockDigital/startbootstrap-resume/issues",
-        "email": "feedback@startbootstrap.com"
-    },
+    "description": "Personal Website for Tracy Michau",
+    "homepage": "https://tracymichau.com",
+    "repository": "https://github.com/The-Michaus/website",
+    "author": "Tracy Michau",
     "license": "MIT",
-    "author": "Start Bootstrap",
-    "contributors": [
-        "David Miller (http://davidmiller.io/)"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/BlackrockDigital/startbootstrap-resume.git"
-    },
     "dependencies": {
-        "@fortawesome/fontawesome-free": "5.15.3",
+        "@fortawesome/fontawesome-free": "5.15.4",
         "bootstrap": "4.6.0",
         "jquery": "3.6.0",
         "jquery.easing": "^1.4.1"
     },
     "devDependencies": {
-        "browser-sync": "2.26.14",
-        "del": "6.0.0",
-        "gulp": "4.0.2",
-        "gulp-autoprefixer": "7.0.1",
-        "gulp-clean-css": "4.3.0",
-        "gulp-header": "2.0.9",
-        "gulp-plumber": "^1.2.1",
-        "gulp-rename": "2.0.0",
-        "gulp-sass": "4.1.0",
-        "gulp-uglify": "3.0.2",
-        "merge-stream": "2.0.0"
+        "@parcel/transformer-sass": "^2.0.1",
+        "parcel": "^2.0.1"
     }
 }
