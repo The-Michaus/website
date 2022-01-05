@@ -1,25 +1,24 @@
 {
-    "title": "Tracy Michau",
-    "name": "tracymichau",
-    "version": "1.0.0",
-    "source": "index.html",
-    "scripts": {
-        "start": "parcel",
-        "build": "parcel build"
-    },
-    "description": "Personal Website for Tracy Michau",
-    "homepage": "https://tracymichau.com",
-    "repository": "https://github.com/The-Michaus/website",
-    "author": "Tracy Michau",
-    "license": "MIT",
-    "dependencies": {
-        "@fortawesome/fontawesome-free": "5.15.4",
-        "bootstrap": "4.6.0",
-        "jquery": "3.6.0",
-        "jquery.easing": "^1.4.1"
-    },
-    "devDependencies": {
-        "@parcel/transformer-sass": "^2.0.1",
-        "parcel": "^2.0.1"
-    }
+	"title": "Tracy Michau",
+	"name": "tracymichau",
+	"version": "1.0.0",
+	"source": "index.html",
+	"scripts": {
+		"start": "parcel --open",
+		"build": "parcel build"
+	},
+	"description": "Personal Website for Tracy Michau",
+	"homepage": "https://tracymichau.com",
+	"repository": "https://github.com/The-Michaus/website",
+	"author": "Tracy Michau",
+	"license": "MIT",
+	"dependencies": {
+		"@fortawesome/fontawesome-free": "5.15.4",
+		"@popperjs/core": "^2.11.2",
+		"bootstrap": "5.1.3"
+	},
+	"devDependencies": {
+		"@parcel/transformer-sass": "^2.1.0",
+		"parcel": "^2.1.0"
+	}
 }
