@@ -1,6 +1,7 @@
 {
     "title": "Tracy Michau",
     "name": "tracymichau",
+    "version": "1.0.0",
     "source": "index.html",
     "scripts": {
         "start": "parcel",
