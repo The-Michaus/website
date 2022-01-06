@@ -1,9 +1,20 @@
-import * as bootstrap from 'bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import '@fortawesome/fontawesome-free/css/all.min.css';
+import 'bootstrap/js/dist/collapse';
+import 'bootstrap/js/dist/dropdown';
+import 'bootstrap/js/dist/scrollspy';
+import {
+	faInstagram,
+	faPinterest,
+	faLinkedinIn,
+} from '@fortawesome/free-brands-svg-icons';
+import { faCheck, faTrophy } from '@fortawesome/free-solid-svg-icons';
+import { library, dom } from '@fortawesome/fontawesome-svg-core';
 import '../scss/styles.scss';
 
-window.addEventListener('DOMContentLoaded', (event) => {
+library.add(faInstagram, faPinterest, faLinkedinIn, faCheck, faTrophy);
+
+dom.watch();
+
+window.addEventListener('DOMContentLoaded', () => {
 	// Collapse responsive navbar when toggler is visible
 	const navbarToggler = document.body.querySelector('.navbar-toggler');
 	const responsiveNavItems = [].slice.call(
