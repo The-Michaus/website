@@ -21,7 +21,7 @@
 		"bootstrap": "5.2.0"
 	},
 	"devDependencies": {
-		"@parcel/reporter-bundle-analyzer": "^2.6.2",
+		"@parcel/reporter-bundle-analyzer": "^2.7.0",
 		"@parcel/transformer-sass": "^2.6.2",
 		"parcel": "^2.6.2"
 	}
