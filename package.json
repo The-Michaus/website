@@ -22,7 +22,7 @@
 	},
 	"devDependencies": {
 		"@parcel/reporter-bundle-analyzer": "^2.13.2",
-		"@parcel/transformer-sass": "^2.13.2",
+		"@parcel/transformer-sass": "^2.13.3",
 		"parcel": "^2.13.2"
 	}
 }
