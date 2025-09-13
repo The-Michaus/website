@@ -14,15 +14,15 @@
 	"author": "Tracy Michau",
 	"license": "MIT",
 	"dependencies": {
-		"@fortawesome/fontawesome-svg-core": "^6.7.2",
-		"@fortawesome/free-brands-svg-icons": "^6.7.2",
-		"@fortawesome/free-solid-svg-icons": "^6.7.2",
+		"@fortawesome/fontawesome-svg-core": "^7.0.1",
+		"@fortawesome/free-brands-svg-icons": "^7.0.1",
+		"@fortawesome/free-solid-svg-icons": "^7.0.1",
 		"@popperjs/core": "^2.11.8",
-		"bootstrap": "5.3.3"
+		"bootstrap": "5.3.8"
 	},
 	"devDependencies": {
-		"@parcel/reporter-bundle-analyzer": "^2.13.3",
-		"@parcel/transformer-sass": "^2.13.3",
-		"parcel": "^2.13.3"
+		"@parcel/reporter-bundle-analyzer": "^2.15.4",
+		"@parcel/transformer-sass": "^2.15.4",
+		"parcel": "^2.15.4"
 	}
 }
