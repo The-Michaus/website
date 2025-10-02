@@ -1,3 +1,14 @@
+// MIEE badge circular frame
+.miee-badge-img {
+	max-width: 200px;
+	width: 100%;
+	height: auto;
+	border-radius: 50%;
+	border: 0.3rem solid $primary;
+	box-shadow: 0 0 10px rgba(0,0,0,0.15);
+	background: $white;
+	object-fit: cover;
+}
 //
 // Global
 //
@@ -39,6 +50,7 @@ h3 {
 p.lead {
 	font-size: 1.15rem;
 	font-weight: 400;
+	text-align: justify;
 }
 
 .subheading {
