@@ -70,15 +70,32 @@
     background-size: 100%;
   }
 
-  /* Nav collapse container — hidden on mobile, toggled by .show */
-  .navbar-collapse {
-    display: none;
-    width: 100%;
-    flex-direction: column;
+  /* Nav collapse container — Popover API manages open/closed state */
+  .navbar-collapse[popover] {
+    /* Reset browser popover defaults */
+    border: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+    background-color: var(--color-primary);
+    /* Hide ::backdrop — not needed for a nav panel */
   }
 
-  .navbar-collapse.show {
+  .navbar-collapse[popover]::backdrop {
+    display: none;
+  }
+
+  /* Mobile: position the open popover below the fixed navbar */
+  .navbar-collapse[popover]:popover-open {
+    position: fixed;
+    top: var(--navbar-height);
+    left: 0;
+    right: 0;
+    bottom: auto; /* override UA stylesheet's inset: 0 so height fits content */
+    width: 100%;
+    height: auto;
     display: flex;
+    flex-direction: column;
   }
 
   /* Nav list */
@@ -141,8 +158,12 @@
       display: none;
     }
 
-    .navbar-collapse {
+    /* Pull the popover back into sidebar flow — always visible on desktop */
+    .navbar-collapse[popover] {
       display: flex !important;
+      position: static !important;
+      inset: unset !important;
+      background: transparent;
       flex-grow: 0;
       align-items: flex-start;
       width: 100%;
