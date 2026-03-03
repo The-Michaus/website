@@ -1,0 +1,47 @@
+@layer components {
+  /* ----------------------------------------------------------
+     Resume sections  (replaces _resume-section.scss)
+     ---------------------------------------------------------- */
+  .resume-section {
+    display: flex;
+    align-items: center;
+    padding: 5rem 1.5rem;
+    max-width: 75rem;
+  }
+
+  @media (min-width: 768px) {
+    .resume-section {
+      min-height: 100vh;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .resume-section {
+      padding: 5rem 3rem;
+    }
+  }
+
+  /* Resume item: stacked on mobile, side-by-side on md+ */
+  .resume-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: 768px) {
+    .resume-item {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .resume-content {
+      flex: 0 1 70%;
+      max-width: 70%;
+    }
+
+    .resume-date {
+      flex: 0 1 30%;
+      max-width: 30%;
+      text-align: right;
+    }
+  }
+}
