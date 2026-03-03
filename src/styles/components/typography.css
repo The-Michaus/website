@@ -1,0 +1,81 @@
+@layer components {
+  /* ----------------------------------------------------------
+     Typography classes  (from scss/_global.scss)
+     ---------------------------------------------------------- */
+  .subheading {
+    font-family: var(--font-heading);
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: var(--color-gray-700);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .subheading {
+      color: var(--color-gray-400);
+    }
+  }
+
+  .lead {
+    font-size: 1.15rem;
+    font-weight: 400;
+    text-align: justify;
+  }
+
+  /* Profile image in About section (mobile only) */
+  .img-resume {
+    max-width: 10rem;
+    max-height: 10rem;
+    border-radius: 9999px;
+    border: 0.3rem solid var(--color-primary);
+    display: block;
+    margin: 0 auto 0.5rem;
+  }
+
+  /* MIEE badge image */
+  .miee-badge-img {
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+    border-radius: 9999px;
+    border: 0.3rem solid var(--color-primary);
+    box-shadow: 0 0 10px rgb(0 0 0 / 0.15);
+    background: var(--color-white);
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* Primary color text (used for dates, surname highlight) */
+  .text-primary {
+    color: var(--color-primary) !important;
+  }
+
+  /* Warning color text (used for trophy icons) */
+  .text-warning {
+    color: var(--color-warning) !important;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .text-primary {
+      color: color-mix(in srgb, var(--color-primary) 85%, white) !important;
+    }
+  }
+
+  /* Section heading label (e.g., "MIEE") */
+  .miee-label {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    color: var(--color-gray-800);
+    margin-top: 0.5rem;
+    text-align: center;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .miee-label {
+      color: var(--color-gray-400);
+    }
+  }
+}
